@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/1BITTopDownMusics - Track 02 (1BIT Dark Cave).wav-ac011b2a44347b821cbe1b2ce6e101a2.sample"
+
+[deps]
+
+source_file="res://assets/8BIT CanariPack TopDown/MUSIC/1BITTopDownMusics - Track 02 (1BIT Dark Cave).wav"
+dest_files=[ "res://.import/1BITTopDownMusics - Track 02 (1BIT Dark Cave).wav-ac011b2a44347b821cbe1b2ce6e101a2.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

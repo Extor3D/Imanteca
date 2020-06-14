@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Death01.wav-1a611b1fdf4fd23708f2065b3ed62804.sample"
+
+[deps]
+
+source_file="res://assets/8BIT CanariPack TopDown/SFX/Death01.wav"
+dest_files=[ "res://.import/Death01.wav-1a611b1fdf4fd23708f2065b3ed62804.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0
