@@ -1,8 +1,10 @@
 extends Area2D
 
-export var RANGE = 100
-export var ARC = 45
+export var RANGE = 200
+export var ARC = 90
 export var INTENSITY = 10
+var magnetic_mod_1 = 0.1 #Mas bajo: mas fuerza general (menos de 0.1 puede ser caotico)
+var magnetic_mod_2 = 500 #Mas alto: mas fuerza a la distancia
 
 
 # Declare member variables here. Examples:
@@ -31,9 +33,9 @@ func _physics_process(_delta):
 	for i in $MagnetInfluence.get_overlapping_bodies():
 		if i != self:
 			var dist : float = (i.get_position() - global_position).length()
-			var attractStrength : float = INTENSITY / (0.1 + (dist/200))
+			var attractStrength : float = INTENSITY / (magnetic_mod_1 + (dist/magnetic_mod_2))
 			var attractDirection : Vector2 = (global_position - i.get_position()).normalized()
-			i.apply_impulse(Vector2.ZERO, attractDirection * attractStrength)
+			i.apply_impulse(Vector2(0,0.1), attractDirection * attractStrength)
 
 	currentTotalForce = Vector2(0,0)
 

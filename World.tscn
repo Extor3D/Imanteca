@@ -22,7 +22,7 @@ height = 12.8832
 [node name="Attractable" type="RigidBody2D" parent="."]
 position = Vector2( 539.838, 241.45 )
 gravity_scale = 0.0
-linear_damp = 10.0
+linear_damp = 5.0
 angular_damp = 3.0
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="Attractable"]
